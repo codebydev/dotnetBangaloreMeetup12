@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+	<script type="text/babel">
+        // Similar to string interpolation 
+        // string name="Ram";
+		// Console.WriteLine($"{name}");
+        
+		function createEmail(firstName, purchasePrice) {
+			let shipping = 5.95;
+			console.log(
+				`Hi ${firstName}, Thanks for buying from us!
+					Total: $${purchasePrice}
+					Shipping: $${shipping}
+					Grand Total: $${purchasePrice + shipping};
+				`	
+				);
+		}
+
+		createEmail("Ram", 100);        
+	</script>
+	<title>Template Strings</title>
+</head>
+<body>
+</body>	
+</html>

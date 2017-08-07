@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+	<script type="text/babel">
+		
+		class Vehicle {
+			constructor(description, wheels) {
+				this.description = description;
+				this.wheels = wheels;
+			}
+			describeYourself() {
+				console.log(`I am a ${this.description} with ${this.wheels} wheels`);
+			}
+		}
+		var marutiOmni = new Vehicle("Maruti Omni", 4);
+
+        marutiOmni.describeYourself();
+
+		class Bus extends Vehicle {
+			constructor() {
+				super("Volvo B7R", 8)
+			}
+		}
+
+		var volvoBus = new Bus();
+        volvoBus.describeYourself();
+	</script>
+	<title>Classes with inheritance</title>
+</head>
+<body>
+</body>	
+</html>
+
+
+
+
+
+
+
+

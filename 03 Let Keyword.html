@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+	<script type="text/babel">
+        // No Hoisting takes place when we use let , 
+        // making sure that the variable declaration takes place before it is being used. 
+        // let is block-scoped instead of lexically scoped to a function
+        // let is hoisted to the top of the block, while var declarations are hoisted to top of the function
+
+        function divide(x, y){
+            if(y!==0){
+                // var result;
+                let result;
+                result=x/y;
+            }
+            return result;
+        }
+
+        console.log(divide(10,2));
+
+	</script>
+	<title>Let Keyword</title>
+</head>
+<body>
+	
+</body>	
+</html>
